@@ -1,0 +1,131 @@
+/* SHARED AND GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+#about, #portfolio, #contact {
+    padding: 0 100px;
+    margin: 50px 0;
+}
+
+/* HEADER AND NAVIGATION SECTIONS */
+#header {
+    font-size: 16px;
+    background-color: #49384e;
+    color: rgb(255, 255, 255, 100%);
+    padding: 20px 100px;
+}
+
+#header img { /* all images within header */
+    border-radius: 50%;
+    width: 100px;
+}
+
+#header > h2 { /* direct child */
+    font-size: 2em; /* takes font size from parent and multiplies it */
+    display: inline;
+    position: relative;
+    bottom: 38px;
+    margin-left: 12px;
+}
+
+nav {
+    background-color: #49384e;
+    border-top: 1px solid #5e4d63;
+    text-align: right;
+    padding-right: 80px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+#hero {
+    color: #fff;
+    background-image: url("images/hero.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PORTFOLIO SECTION */
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fr = fraction */
+    grid-gap: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    border: 1px solid #222;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+/* CONTACT SECTION */
+input:not([type='submit']), textarea {
+    width: 400px;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: black;
+
+}
+
+input[type='submit'] {
+    background-color: #6c6c6c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type='submit']:hover {
+    background-color: #5b5b5b;
+    cursor: pointer;
+}
+
+/* FOOTER SECTION */
+#footer nav {
+    text-align: left;
+    padding-left: 80px;
+}
