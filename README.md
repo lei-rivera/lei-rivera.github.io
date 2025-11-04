@@ -1,3 +1,3 @@
 # lei-rivera.github.io
 
-hello
+Hello, this is my portfolio website
